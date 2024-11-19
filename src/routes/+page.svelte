@@ -103,13 +103,13 @@
 
 <img
   src="assets/logo.svg"
-  alt="RendPro strony internetowy i wizualizacje 3D"
+  alt="Logo"
   class={logoClass}
 />
 
 <p class={paragraphClass}>Website Under Contruction</p>
 
-<h1 class={headlineClass}>We'll <span>be right back</span></h1>
+<h1 class={headlineClass}>We'll be<span> right back</span></h1>
 
 <p class={paragraphClass}>
   The site will be up soon!
