@@ -1,4 +1,4 @@
-import { css } from "@emotion/css/dist/emotion-css.umd.min.js";
+import { css } from "@emotion/css";
 
 export const logoClass = css`
   margin-bottom: 45px;
