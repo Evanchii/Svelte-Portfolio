@@ -14,7 +14,7 @@
   import womanIcon from "@iconify/icons-noto/woman-astronaut-light-skin-tone";
   import { SOCIAL_LINKS } from "./../config";
   import { onMount } from "svelte";
-  import gsap from "gsap/all";
+  // import gsap from "gsap/all";
 
   import ParallaxItem from "./../components/ParallaxItem.svelte";
   import MouseCursor from "./../components/MouseCursor.svelte";
@@ -25,17 +25,17 @@
 
   $: {
     if (isScale) {
-      gsap.to(mouseCursor?.$$.ctx[0], {
-        scale: 1.4,
-        duration: 0.5,
-        ease: "power4.out",
-      });
+      // gsap.to(mouseCursor?.$$.ctx[0], {
+      //   scale: 1.4,
+      //   duration: 0.5,
+      //   ease: "power4.out",
+      // });
     } else {
-      gsap.to(mouseCursor?.$$.ctx[0], {
-        scale: 1,
-        duration: 0.5,
-        ease: "power4.out",
-      });
+      // gsap.to(mouseCursor?.$$.ctx[0], {
+      //   scale: 1,
+      //   duration: 0.5,
+      //   ease: "power4.out",
+      // });
     }
   }
 
@@ -64,27 +64,27 @@
       const x = (window.innerWidth - e.pageX * 10) / 100;
       const y = (window.innerHeight - e.pageY * 10) / 100;
 
-      gsap.to(parallaxItems[0].$$.ctx[1], {
-        x,
-        y,
-        duration: 2,
-        ease: "expo.out",
-      });
+      // gsap.to(parallaxItems[0].$$.ctx[1], {
+      //   x,
+      //   y,
+      //   duration: 2,
+      //   ease: "expo.out",
+      // });
 
-      gsap.to(parallaxItems[1].$$.ctx[1], {
-        x: -x,
-        y: -y,
-        duration: 2,
-        ease: "expo.out",
-      });
+      // gsap.to(parallaxItems[1].$$.ctx[1], {
+      //   x: -x,
+      //   y: -y,
+      //   duration: 2,
+      //   ease: "expo.out",
+      // });
 
-      gsap.to(mouseCursor.$$.ctx[0], {
-        x: e.pageX - 20,
-        y: e.pageY - 20,
-        opacity: 1,
-        duration: 1,
-        ease: "power4.out",
-      });
+      // gsap.to(mouseCursor.$$.ctx[0], {
+      //   x: e.pageX - 20,
+      //   y: e.pageY - 20,
+      //   opacity: 1,
+      //   duration: 1,
+      //   ease: "power4.out",
+      // });
     };
 
     document.addEventListener("mousemove", mouseMoveEffects);
